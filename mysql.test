@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "请输入number: " num
+/usr/local/jmeter-4.0/bin/jmeter -n -t ./mysql/jmx/${num}_jdbc.jmx -l ./mysql/jtl/${num}_jdbc.jtl
